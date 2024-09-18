@@ -1,0 +1,12 @@
+.running-strip {
+    background-color: #28a745; /* Match the theme */
+    color: white;
+    padding: 10px 0;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .update-text {
+    padding: 0 20px;
+    white-space: nowrap;
+  }

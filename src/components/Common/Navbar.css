@@ -1,0 +1,173 @@
+/* Navbar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 20px; */
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+
+  .logo img {
+    height: 100px;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 20px;
+  }
+
+  .nav-links li {
+    list-style: none;
+    position: relative;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: 500;
+    /* padding-left: 25px; */
+    padding-bottom: 5px;
+  }
+
+  .nav-links a:hover {
+    color: #28a745;
+  }
+
+  .nav-links a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #28a745;
+    transition: width 0.3s;
+  }
+
+  .nav-links a:hover::after {
+    width: 100%;
+  }
+
+  /* Dropdown Menu */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    z-index: 1;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown-content a {
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+    color: #333;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+
+  /* Hamburger Menu */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+  }
+
+  .bar {
+    width: 100%;
+    height: 4px;
+    background-color: #333;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+
+  /* Active Menu */
+  .nav-links.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 30px;
+  }
+
+  .nav-links.active li {
+    margin: 10px 0;
+  }
+
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+    }
+
+    .hamburger {
+      display: flex;
+    }
+  }
+
+  /* Mobile Dropdown */
+  .dropdown-content {
+    position: relative;
+    box-shadow: none;
+  }
+
+  .dropdown-content a {
+    padding: 8px 0;
+  }
+
+
+ /* Register Now! Button */
+.register-btn {
+    background: linear-gradient(135deg, #28a745, #8bc34a); /* Green gradient */
+    display: inline-block !important;
+    color: white !important;
+    padding: 12px 30px;
+    font-size: 16px !important;
+    font-weight: bold !important;
+    border: none;
+    border-radius: 50px; /* More rounded shape */
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15); /* Soft shadow */
+    margin-left: 20px; /* Spacing to the right */
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    animation: pop-out 1.5s infinite ease-in-out; /* Pop-out animation */
+  }
+
+  /* Hover Effect */
+  .register-btn:hover {
+    transform: scale(1.1); /* Slight growth on hover */
+    background: linear-gradient(135deg, #8bc34a, #28a745); /* Gradient flip */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow */
+  }
+
+  /* Pop-out Keyframes */
+  @keyframes pop-out {
+    0%, 100% {
+      transform: scale(1); /* Normal size */
+    }
+    50% {
+      transform: scale(1.05); /* Slight growth */
+    }
+  }
+
+  /* Responsive Spacing */
+  @media (max-width: 768px) {
+    .register-btn {
+      margin-left: 10px; /* Reduce spacing on smaller screens */
+      padding: 10px 20px; /* Adjust padding for smaller screens */
+    }
+  }

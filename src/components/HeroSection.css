@@ -1,0 +1,90 @@
+.hero-section {
+    background-image: url('../../public/hero.png'); /* Add the banner image path */
+    background-size: cover;
+    background-position: center;
+    height: 90vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: white;
+    text-align: center;
+  }
+
+  .hero-content {
+    background: rgba(0, 0, 0, 0.5); /* Optional background overlay */
+    padding: 20px;
+    animation: fadeIn 2s ease-in-out !important;
+  }
+
+  .event-title {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    animation: slideInDown 1.5s ease-out !important;
+  }
+
+  .event-tagline {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    animation: slideInUp 1.5s ease-out !important;
+  }
+
+  /* Register Button */
+  .register-button {
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    animation: popOut 1s ease infinite alternate !important;
+  }
+
+  /* Button Animation */
+  @keyframes popOut {
+    0% {
+      transform: scale(1);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    100% {
+      transform: scale(1.1);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    }
+  }
+
+  /* Title & Tagline Animation */
+  @keyframes slideInDown {
+    from {
+      transform: translateY(-100px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideInUp {
+    from {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  /* General Fade-in Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }

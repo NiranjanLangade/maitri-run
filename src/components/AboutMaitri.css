@@ -1,0 +1,85 @@
+/* About Maitri Run Page Styles */
+.about-maitri-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+  }
+
+  .about-maitri-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .about-maitri-image {
+    flex: 1 1 40%;
+  }
+
+  .about-maitri-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .about-maitri-text {
+    flex: 1 1 55%;
+    padding-left: 20px;
+  }
+
+  .about-maitri-text h1 {
+    font-size: 2.5rem;
+    color: #008000; /* Green theme */
+    margin-bottom: 20px;
+  }
+
+  .about-maitri-text p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+
+  /* Stats Section */
+  .stats-section {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f9f9f9;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+  }
+
+  .stat-item {
+    text-align: center;
+  }
+
+  .stat-item h2 {
+    font-size: 3rem;
+    color: #008000; /* Green theme */
+    margin-bottom: 10px;
+  }
+
+  .stat-item p {
+    font-size: 1.2rem;
+    color: #333;
+  }
+
+  @media screen and (max-width: 768px) {
+    .about-maitri-content {
+      flex-direction: column;
+    }
+
+    .about-maitri-text {
+      padding-left: 0;
+      margin-top: 20px;
+    }
+
+    .stats-section {
+      flex-direction: column;
+    }
+
+    .stat-item {
+      margin-bottom: 20px;
+    }
+  }
