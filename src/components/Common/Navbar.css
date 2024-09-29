@@ -108,7 +108,7 @@
 
   @media (max-width: 768px) {
     .nav-links {
-      display: none;
+      display: grid;
     }
 
     .hamburger {
@@ -165,9 +165,3 @@
   }
 
   /* Responsive Spacing */
-  @media (max-width: 768px) {
-    .register-btn {
-      margin-left: 10px; /* Reduce spacing on smaller screens */
-      padding: 10px 20px; /* Adjust padding for smaller screens */
-    }
-  }

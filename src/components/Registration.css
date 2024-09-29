@@ -1,0 +1,89 @@
+.registration-container {
+    padding: 20px;
+    background-color: #f9fafb;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .registration-title h1 {
+    font-size: 2rem;
+    color: #28a745; /* Maitri Green */
+    margin-bottom: 10px;
+  }
+
+  .registration-title p {
+    font-size: 1.2rem;
+    color: #333;
+  }
+
+  .registration-online, .registration-offline {
+    margin-top: 30px;
+    max-width: 600px;
+  }
+
+  h2 {
+    color: #28a745;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+  }
+
+  p {
+    color: #555;
+    font-size: 1.1rem;
+  }
+
+  .register-now-btn {
+    display: inline-block;
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+  }
+
+  .register-now-btn:hover {
+    background-color: #218838;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+  }
+
+  @media (max-width: 768px) {
+    .registration-container {
+      padding: 10px;
+    }
+
+    .registration-title h1 {
+      font-size: 1.6rem;
+    }
+
+    .registration-title p {
+      font-size: 1rem;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+    }
+
+    p, li {
+      font-size: 1rem;
+    }
+
+    .register-now-btn {
+      font-size: 1rem;
+      padding: 8px 16px;
+    }
+  }

@@ -1,0 +1,76 @@
+.venue-container {
+    padding: 20px;
+    text-align: center;
+    background-color: #f9fafb;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    color: #28a745; /* Maitri Green */
+    margin-bottom: 20px;
+  }
+
+  .venue-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .venue-section {
+    background-color: white;
+    border: 2px solid #28a745;
+    border-radius: 8px;
+    padding: 20px;
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 10px;
+  }
+
+  strong {
+    font-size: 1.3rem;
+    color: #28a745;
+  }
+
+  .map-section {
+    margin-top: 30px;
+  }
+
+  .map-section h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+
+    .venue-section {
+      width: 100%;
+    }
+
+    .map-section h2 {
+      font-size: 1.4rem;
+    }
+  }

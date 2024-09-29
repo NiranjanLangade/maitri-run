@@ -1,0 +1,92 @@
+.route-container {
+    padding: 20px;
+    text-align: center;
+    background-color: #f9fafb;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    color: #28a745; /* Maitri Green */
+    margin-bottom: 20px;
+  }
+
+  .route-description {
+    margin-bottom: 30px;
+  }
+
+  .route-description p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+
+  .route-map {
+    margin-bottom: 30px;
+  }
+
+  .route-map h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  .elevation-section {
+    margin-bottom: 30px;
+  }
+
+  .elevation-section h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  .elevation-section p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+
+  .key-points {
+    margin-top: 30px;
+  }
+
+  .key-points h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  .key-points ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .key-points li {
+    font-size: 1.2rem;
+    color: #555;
+    margin: 5px 0;
+  }
+
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+
+    .route-map h2 {
+      font-size: 1.4rem;
+    }
+
+    .elevation-section h2 {
+      font-size: 1.4rem;
+    }
+
+    .key-points h2 {
+      font-size: 1.4rem;
+    }
+  }

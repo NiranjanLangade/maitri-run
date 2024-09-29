@@ -32,12 +32,12 @@ function App() {
         <Route path="/sponsors" element={<Sponsors />} />
 
         {/* Race Details Pages */}
-        <Route path="/registration" element={<RaceRegistration />} />
-        <Route path="/medals" element={<Medals />} />
-        <Route path="/prizes-categories" element={<PrizesCategories />} />
-        <Route path="/venue" element={<Venue />} />
-        <Route path="/route" element={<RoutePage />} />
-        <Route path="/rules" element={<Rules />} />
+        <Route path="/race-details/registration" element={<RaceRegistration />} />
+        <Route path="/race-details/medals" element={<Medals />} />
+        <Route path="/race-details/prizes-categories" element={<PrizesCategories />} />
+        <Route path="/race-details/venue" element={<Venue />} />
+        <Route path="/race-details/route" element={<RoutePage />} />
+        <Route path="/race-details/rules" element={<Rules />} />
 
         {/* Other Pages */}
         <Route path="/faqs" element={<FAQs />} />
