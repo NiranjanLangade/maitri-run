@@ -18,7 +18,7 @@ const HomePage = () => {
         <Timeline/>
         <WhyParticipate/>
         <Sponsors/>
-        <Testimonials/>
+        {/* <Testimonials/> */}
     </div>
   )
 }

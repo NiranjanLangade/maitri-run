@@ -5,15 +5,15 @@ import './Sponsers.css';
 const Sponsors = () => {
   const sponsors = [
     {
-      logo: 'title-sponsor-logo.png',
+      logo: './images/title-logo.png',
       type: 'Title Sponsor'
     },
     {
-      logo: 'media-partner-logo.png',
+      logo: './images/media-logo.png',
       type: 'Media Partner'
     },
     {
-      logo: 'community-partner-logo.png',
+      logo: './images/community-logo.png',
       type: 'Community Partner'
     },
     // Add more sponsors as needed

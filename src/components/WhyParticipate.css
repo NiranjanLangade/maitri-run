@@ -31,6 +31,8 @@
   }
 
   .card img {
-    width: 50px;
-    margin-bottom: 1rem;
+    width: 100px; /* Adjust the width to fix the size of the icon */
+    height: 100px; /* You can adjust the height too, if needed */
+    object-fit: contain; /* Makes sure the icon fits within the given size without stretching */
+    margin-bottom: 20px;
   }

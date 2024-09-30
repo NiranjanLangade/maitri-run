@@ -1,59 +1,49 @@
-import React, { useState, useEffect } from 'react';
-import './Countdown.css';
+import React, { useState, useEffect } from "react";
+import "./Countdown.css";
+
+const COUNTDOWN_TARGET = new Date("2024-12-01T23:59:59");
+
+const getTimeLeft = () => {
+	const totalTimeLeft = COUNTDOWN_TARGET - new Date();
+	const days = Math.floor(totalTimeLeft / (1000 * 60 * 60 * 24));
+	const hours = Math.floor((totalTimeLeft / (1000 * 60 * 60)) % 24);
+	const minutes = Math.floor((totalTimeLeft / (1000 * 60)) % 60);
+	const seconds = Math.floor((totalTimeLeft / 1000) % 60);
+	return { days, hours, minutes, seconds };
+};
 
 const Countdown = () => {
-  const calculateTimeLeft = () => {
-    const eventDate = new Date('2024-12-01T06:00:00'); // Event date
-    const currentTime = new Date();
-    const difference = eventDate - currentTime;
+	const [timeLeft, setTimeLeft] = useState(() => getTimeLeft());
 
-    let timeLeft = {};
+	useEffect(() => {
+		const timer = setInterval(() => {
+			setTimeLeft(getTimeLeft());
+		}, 1000);
 
-    if (difference > 0) {
-      timeLeft = {
-        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-        hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-        minutes: Math.floor((difference / 1000 / 60) % 60),
-        seconds: Math.floor((difference / 1000) % 60)
-      };
-    }
+		return () => {
+			clearInterval(timer);
+		};
+	}, []);
 
-    return timeLeft;
-  };
-
-  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setTimeLeft(calculateTimeLeft());
-    }, 1000);
-
-    return () => clearInterval(timer);
-  }, []);
-
-  return (
-    <div className="countdown-container">
-      <h2>Event Starts In</h2>
-      <div className="countdown">
-        <div className="time-box">
-          <p className="time-number">{timeLeft.days || '0'}</p>
-          <span className="time-label">Days</span>
-        </div>
-        <div className="time-box">
-          <p className="time-number">{timeLeft.hours || '0'}</p>
-          <span className="time-label">Hours</span>
-        </div>
-        <div className="time-box">
-          <p className="time-number">{timeLeft.minutes || '0'}</p>
-          <span className="time-label">Minutes</span>
-        </div>
-        <div className="time-box">
-          <p className="time-number">{timeLeft.seconds || '0'}</p>
-          <span className="time-label">Seconds</span>
-        </div>
-      </div>
-    </div>
-  );
+	return (
+		<div className='countdown'>
+			<h2>Registration Starts In</h2>
+			<div className='content'>
+				{Object.entries(timeLeft).map((el) => {
+					const label = el[0];
+					const value = el[1];
+					return (
+						<div className='box' key={label}>
+							<div className='value'>
+								<span>{value}</span>
+							</div>
+							<span className='label'> {label} </span>
+						</div>
+					);
+				})}
+			</div>
+		</div>
+	);
 };
 
 export default Countdown;

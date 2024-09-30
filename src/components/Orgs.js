@@ -5,8 +5,8 @@ import './orgs.css';
 
 const organizers = [
   {
-    name: 'John Doe',
-    designation: 'Event Director',
+    name: 'Mr. Narendra Godse',
+    designation: 'Chairman',
     social: {
       facebook: 'https://facebook.com/johndoe',
       twitter: 'https://twitter.com/johndoe',
@@ -15,8 +15,8 @@ const organizers = [
     image: '/organizers/johndoe.jpg', // Replace with actual image path
   },
   {
-    name: 'Jane Smith',
-    designation: 'Operations Head',
+    name: 'Mr. Jaywant Godase',
+    designation: 'Vice Chairman',
     social: {
       facebook: 'https://facebook.com/janesmith',
       twitter: 'https://twitter.com/janesmith',
@@ -25,8 +25,8 @@ const organizers = [
     image: '/organizers/janesmith.jpg',
   },
   {
-    name: 'Robert Lee',
-    designation: 'Marketing Lead',
+    name: 'Mr. Rajkiran Langade',
+    designation: 'Secretary',
     social: {
       facebook: 'https://facebook.com/robertlee',
       twitter: 'https://twitter.com/robertlee',
@@ -35,7 +35,7 @@ const organizers = [
     image: '/organizers/robertlee.jpg',
   },
   {
-    name: 'Emily Johnson',
+    name: 'Dr. Mahesh Katkar',
     designation: 'Sponsorship Coordinator',
     social: {
       facebook: 'https://facebook.com/emilyjohnson',
@@ -45,8 +45,8 @@ const organizers = [
     image: '/organizers/emilyjohnson.jpg',
   },
   {
-    name: 'Michael Williams',
-    designation: 'Logistics Manager',
+    name: 'Dr. Ajit Inamdar',
+    designation: 'Member',
     social: {
       facebook: 'https://facebook.com/michaelwilliams',
       twitter: 'https://twitter.com/michaelwilliams',
@@ -55,8 +55,118 @@ const organizers = [
     image: '/organizers/michaelwilliams.jpg',
   },
   {
-    name: 'Sophia Brown',
-    designation: 'Volunteer Coordinator',
+    name: 'Dr. Pravin Chavan',
+    designation: 'Member',
+    social: {
+      facebook: 'https://facebook.com/sophiabrown',
+      twitter: 'https://twitter.com/sophiabrown',
+      linkedin: 'https://linkedin.com/in/sophiabrown',
+    },
+    image: '/organizers/sophiabrown.jpg',
+  },
+  {
+    name: 'Dr. Chandrashekhar Nangare',
+    designation: 'Member',
+    social: {
+      facebook: 'https://facebook.com/sophiabrown',
+      twitter: 'https://twitter.com/sophiabrown',
+      linkedin: 'https://linkedin.com/in/sophiabrown',
+    },
+    image: '/organizers/sophiabrown.jpg',
+  },
+  {
+    name: 'Dr. Dhananjay Khade',
+    designation: 'Member',
+    social: {
+      facebook: 'https://facebook.com/sophiabrown',
+      twitter: 'https://twitter.com/sophiabrown',
+      linkedin: 'https://linkedin.com/in/sophiabrown',
+    },
+    image: '/organizers/sophiabrown.jpg',
+  },
+  {
+    name: 'Dr. Vijay Barge',
+    designation: 'Member',
+    social: {
+      facebook: 'https://facebook.com/sophiabrown',
+      twitter: 'https://twitter.com/sophiabrown',
+      linkedin: 'https://linkedin.com/in/sophiabrown',
+    },
+    image: '/organizers/sophiabrown.jpg',
+  },
+  {
+    name: 'Dr. Hanmant Masal',
+    designation: 'Member',
+    social: {
+      facebook: 'https://facebook.com/sophiabrown',
+      twitter: 'https://twitter.com/sophiabrown',
+      linkedin: 'https://linkedin.com/in/sophiabrown',
+    },
+    image: '/organizers/sophiabrown.jpg',
+  },
+  {
+    name: 'Dr. Suresh Kolekar',
+    designation: 'Member',
+    social: {
+      facebook: 'https://facebook.com/sophiabrown',
+      twitter: 'https://twitter.com/sophiabrown',
+      linkedin: 'https://linkedin.com/in/sophiabrown',
+    },
+    image: '/organizers/sophiabrown.jpg',
+  },
+  {
+    name: 'Dr. Anil Godase',
+    designation: 'Member',
+    social: {
+      facebook: 'https://facebook.com/sophiabrown',
+      twitter: 'https://twitter.com/sophiabrown',
+      linkedin: 'https://linkedin.com/in/sophiabrown',
+    },
+    image: '/organizers/sophiabrown.jpg',
+  },
+  {
+    name: 'Mr. Abhaykumar Deshmukh',
+    designation: 'Member',
+    social: {
+      facebook: 'https://facebook.com/sophiabrown',
+      twitter: 'https://twitter.com/sophiabrown',
+      linkedin: 'https://linkedin.com/in/sophiabrown',
+    },
+    image: '/organizers/sophiabrown.jpg',
+  },
+  {
+    name: 'Mr. Shrinivas Kadam',
+    designation: 'Member',
+    social: {
+      facebook: 'https://facebook.com/sophiabrown',
+      twitter: 'https://twitter.com/sophiabrown',
+      linkedin: 'https://linkedin.com/in/sophiabrown',
+    },
+    image: '/organizers/sophiabrown.jpg',
+  },
+  {
+    name: 'Mr. Govind Bhandare',
+    designation: 'Member',
+    social: {
+      facebook: 'https://facebook.com/sophiabrown',
+      twitter: 'https://twitter.com/sophiabrown',
+      linkedin: 'https://linkedin.com/in/sophiabrown',
+    },
+    image: '/organizers/sophiabrown.jpg',
+  },
+  {
+    name: 'Mr. Amol Godase',
+    designation: 'Member',
+    social: {
+      facebook: 'https://facebook.com/sophiabrown',
+      twitter: 'https://twitter.com/sophiabrown',
+      linkedin: 'https://linkedin.com/in/sophiabrown',
+    },
+    image: '/organizers/sophiabrown.jpg',
+  },
+  {
+    name: 'Mr. Santosh Kulkarni',
+    designation: 'Member',
     social: {
       facebook: 'https://facebook.com/sophiabrown',
       twitter: 'https://twitter.com/sophiabrown',
@@ -115,7 +225,68 @@ const Orgs = () => {
 
       {/* Third row: 4 organizers */}
       <div className="organizer-row quad">
-        {organizers.slice(3, 7).map((organizer, index) => (
+        {organizers.slice(3, 6).map((organizer, index) => (
+          <div className="organizer-card" key={index}>
+            <img src={organizer.image} alt={organizer.name} />
+            <h2>{organizer.name}</h2>
+            <p>{organizer.designation}</p>
+            <div className="social-links">
+              <a href={organizer.social.facebook} target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faFacebook} size="2x" />
+              </a>
+              <a href={organizer.social.twitter} target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faTwitter} size="2x" />
+              </a>
+              <a href={organizer.social.linkedin} target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faLinkedin} size="2x" />
+              </a>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div className="organizer-row quad">
+        {organizers.slice(6, 10).map((organizer, index) => (
+          <div className="organizer-card" key={index}>
+            <img src={organizer.image} alt={organizer.name} />
+            <h2>{organizer.name}</h2>
+            <p>{organizer.designation}</p>
+            <div className="social-links">
+              <a href={organizer.social.facebook} target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faFacebook} size="2x" />
+              </a>
+              <a href={organizer.social.twitter} target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faTwitter} size="2x" />
+              </a>
+              <a href={organizer.social.linkedin} target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faLinkedin} size="2x" />
+              </a>
+            </div>
+          </div>
+        ))}
+      </div>
+      <div className="organizer-row quad">
+        {organizers.slice(10, 14).map((organizer, index) => (
+          <div className="organizer-card" key={index}>
+            <img src={organizer.image} alt={organizer.name} />
+            <h2>{organizer.name}</h2>
+            <p>{organizer.designation}</p>
+            <div className="social-links">
+              <a href={organizer.social.facebook} target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faFacebook} size="2x" />
+              </a>
+              <a href={organizer.social.twitter} target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faTwitter} size="2x" />
+              </a>
+              <a href={organizer.social.linkedin} target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faLinkedin} size="2x" />
+              </a>
+            </div>
+          </div>
+        ))}
+      </div>
+      <div className="organizer-row quad">
+        {organizers.slice(14, 18).map((organizer, index) => (
           <div className="organizer-card" key={index}>
             <img src={organizer.image} alt={organizer.name} />
             <h2>{organizer.name}</h2>

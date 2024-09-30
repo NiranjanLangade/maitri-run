@@ -5,22 +5,22 @@ import './WhyParticipate.css';
 const WhyParticipate = () => {
   const benefits = [
     {
-      icon: './health-icon.png',
+      icon: './images/health-icon.png',
       title: 'Health & Fitness',
       description: 'Join the marathon to improve your physical health and mental well-being.'
     },
     {
-      icon: 'charity-icon.png',
+      icon: './images/support.png',
       title: 'Support a Cause',
       description: 'Your participation helps support local charities and social causes.'
     },
     {
-      icon: 'community-icon.png',
+      icon: './images/community-icon.png',
       title: 'Community and Networking',
       description: 'Meet new people, make friends, and be part of a thriving community.'
     },
     {
-      icon: 'prizes-icon.png',
+      icon: './images/prizes-icon.png',
       title: 'Prizes & Recognition',
       description: 'Win exciting prizes and gain recognition for your achievements.'
     }
