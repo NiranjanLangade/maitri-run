@@ -10,6 +10,21 @@ const Registration = () => {
         <p>Registrations open from 1st November 2024 to 30th November 2024</p>
       </div>
 
+      {/* Marathon Information */}
+      <div className="marathon-info">
+        <h2>Marathon Categories</h2>
+        <div className="marathon-options">
+          <div className="marathon-card">
+            <h3>5 KM Marathon</h3>
+            <p>Registration Fee: ₹500</p>
+          </div>
+          <div className="marathon-card">
+            <h3>10 KM Marathon</h3>
+            <p>Registration Fee: ₹700</p>
+          </div>
+        </div>
+      </div>
+
       {/* Online Registration Section */}
       <div className="registration-online">
         <h2>How to Register Online</h2>

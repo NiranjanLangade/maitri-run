@@ -17,38 +17,65 @@ const Prizes = () => {
           <thead>
             <tr>
               <th>Age Group</th>
-              <th>Men's Prize</th>
-              <th>Women's Prize</th>
+              <th colSpan="3">Men's Prize</th>
+              <th colSpan="3">Women's Prize</th>
+            </tr>
+            <tr>
+              <th></th>
+              <th>Winner</th>
+              <th>1st Runner-up</th>
+              <th>2nd Runner-up</th>
+              <th>Winner</th>
+              <th>1st Runner-up</th>
+              <th>2nd Runner-up</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>18-30</td>
-              <td>₹20,000</td>
-              <td>₹20,000</td>
+              <td>18-35</td>
+              <td>₹7,777</td>
+              <td>₹5,555</td>
+              <td>₹3,333</td>
+              <td>₹7,777</td>
+              <td>₹5,555</td>
+              <td>₹3,333</td>
             </tr>
             <tr>
-              <td>31-40</td>
-              <td>₹15,000</td>
-              <td>₹15,000</td>
-            </tr>
-            <tr>
-              <td>41-50</td>
-              <td>₹10,000</td>
-              <td>₹10,000</td>
+              <td>35-50</td>
+              <td>₹7,777</td>
+              <td>₹5,555</td>
+              <td>₹3,333</td>
+              <td>₹7,777</td>
+              <td>₹5,555</td>
+              <td>₹3,333</td>
             </tr>
             <tr>
               <td>51+</td>
-              <td>₹5,000</td>
-              <td>₹5,000</td>
+              <td>₹7,777</td>
+              <td>₹5,555</td>
+              <td>₹3,333</td>
+              <td>₹7,777</td>
+              <td>₹5,555</td>
+              <td>₹3,333</td>
             </tr>
           </tbody>
         </table>
       </div>
 
-      <div className="distribution">
+      {/* <div className="distribution">
         <h2>Prize Distribution</h2>
         <p>The prize pool will be distributed based on the performance of runners within their respective categories. The first-place finisher in each category will receive 50% of the prize for that group, second place will receive 30%, and third place will receive 20%.</p>
+      </div> */}
+
+      <div className="benefits">
+        <h2>Benefits for All Participants</h2>
+        <ul>
+          <li>E-Certificate of Participation</li>
+          <li>Zumba Warm-up Session</li>
+          <li>Route Support with Water Points</li>
+          <li>Medal for Completing the Marathon</li>
+          <li>Lunch after the Race</li>
+        </ul>
       </div>
 
       <div className="disclaimer">

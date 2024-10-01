@@ -6,7 +6,7 @@ const MedalPage = () => {
     <div className="medals-container">
       <h1>Medals</h1>
       <div className="medal gold-medal">
-        <img src="/images/gold-medal.png" alt="Gold Medal" className="medal-image"/>
+        <img src="/images/gold.png" alt="Gold Medal" className="medal-image"/>
         <h2>Gold Medal</h2>
         <p>For participants completing the marathon in less than 2 hours.</p>
       </div>

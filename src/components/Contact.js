@@ -30,19 +30,16 @@ const Contact = () => {
 
         <div className="contact-details">
           <h2>Our Contact Details</h2>
-          <p><strong>Phone:</strong> +91 12345 67890</p>
-          <p><strong>Email:</strong> contact@maitri-foundation.org</p>
-          <p><strong>Address:</strong> Maitri Foundation, 123 Green Avenue, Mumbai, India</p>
+          <p><strong>Phone : </strong> +91 9561350845</p>
+          <p><strong>Email : </strong> maitrirunvaduj@gmail.com</p>
+          <p><strong>Address : </strong>Rajis Medical, Near Accident Hospital, Vaduj</p>
           <div className="map-container">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.307544556107!2d144.96305841584496!3d-37.81362797975178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43f307433f%3A0x7c27e158d2e6f16d!2sMaitri%20Foundation!5e0!3m2!1sen!2sin!4v1632663136238!5m2!1sen!2sin"
-              width="100%"
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3803.0743536474365!2d74.4459972752152!3d17.599203783324498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc3dad9c737129d%3A0x9ca2d8c6b4a09f38!2sAccident%20Hospital%2C%20Vaduj!5e0!3m2!1sen!2sin!4v1727763268180!5m2!1sen!2sin" width="100%"
               height="250"
               style={{ border: 0 }}
               allowFullScreen=""
               loading="lazy"
-              title="Foundation Location"
-            ></iframe>
+              title="Accident Hospital"></iframe>
           </div>
         </div>
       </div>

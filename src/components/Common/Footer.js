@@ -1,28 +1,39 @@
-// src/components/Footer.js
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube } from 'react-icons/fa';
 import './Footer.css';
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="modern-footer">
       <div className="footer-container">
-        <div className="footer-logo">
-          <img src="/logo.png" alt="Maitri Run Logo" />
+        <div className="footer-top">
+          <div className="footer-logo-section">
+            <img src="/logo.png" alt="Maitri Run Logo" className="footer-logo" />
+            <p className="footer-tagline">Maitri Run - Inspiring Health and Wellness</p>
+          </div>
+
+          <div className="footer-right">
+            <ul className="footer-links">
+              <li><Link to="/">Home</Link></li>
+              <li><Link to="/about">About</Link></li>
+              <li><Link to="/race-details">Race Details</Link></li>
+              <li><Link to="/faqs">FAQs</Link></li>
+              <li><Link to="/contact-us">Contact Us</Link></li>
+            </ul>
+          </div>
         </div>
-        <div className="footer-links">
-          <a href="/about">About</a>
-          <a href="/race-details">Race Details</a>
-          <a href="/faqs">FAQs</a>
-          <a href="/contact-us">Contact Us</a>
+
+        <div className="footer-bottom">
+          <div className="social-icons">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><FaYoutube /></a>
+          </div>
+          <p>&copy; 2024 Maitri Run. All Rights Reserved.</p>
+          <p>Developed with ❤️ By Niranjan</p>
         </div>
-        <div className="social-media">
-          <a href="https://facebook.com">Facebook</a>
-          <a href="https://twitter.com">Twitter</a>
-          <a href="https://instagram.com">Instagram</a>
-        </div>
-      </div>
-      <div className="footer-bottom">
-        <p>&copy; 2024 Maitri Foundation. All rights reserved.</p>
       </div>
     </footer>
   );

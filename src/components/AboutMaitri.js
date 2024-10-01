@@ -7,7 +7,7 @@ const AboutMaitri = () => {
     <div className="about-maitri-container">
       <div className="about-maitri-content">
         <div className="about-maitri-image">
-          <img src="/maitri-run.jpg" alt="Maitri Run Event" />
+          <img src="./images/maitri-run.jpeg" alt="Maitri Run Event" />
         </div>
         <div className="about-maitri-text">
           <h1>About Maitri Run</h1>

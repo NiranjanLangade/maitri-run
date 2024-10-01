@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import './orgs.css';
 
 const organizers = [
@@ -36,7 +36,7 @@ const organizers = [
   },
   {
     name: 'Dr. Mahesh Katkar',
-    designation: 'Sponsorship Coordinator',
+    designation: 'Treasurer',
     social: {
       facebook: 'https://facebook.com/emilyjohnson',
       twitter: 'https://twitter.com/emilyjohnson',
@@ -195,7 +195,7 @@ const Orgs = () => {
               <FontAwesomeIcon icon={faTwitter} size="2x" />
             </a>
             <a href={organizers[0].social.linkedin} target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faLinkedin} size="2x" />
+              <FontAwesomeIcon icon={faInstagram} size="2x" />
             </a>
           </div>
         </div>
@@ -216,7 +216,7 @@ const Orgs = () => {
                 <FontAwesomeIcon icon={faTwitter} size="2x" />
               </a>
               <a href={organizer.social.linkedin} target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faLinkedin} size="2x" />
+                <FontAwesomeIcon icon={faInstagram} size="2x" />
               </a>
             </div>
           </div>
@@ -238,7 +238,7 @@ const Orgs = () => {
                 <FontAwesomeIcon icon={faTwitter} size="2x" />
               </a>
               <a href={organizer.social.linkedin} target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faLinkedin} size="2x" />
+                <FontAwesomeIcon icon={faInstagram} size="2x" />
               </a>
             </div>
           </div>
@@ -246,7 +246,7 @@ const Orgs = () => {
       </div>
 
       <div className="organizer-row quad">
-        {organizers.slice(6, 10).map((organizer, index) => (
+        {organizers.slice(6, 9).map((organizer, index) => (
           <div className="organizer-card" key={index}>
             <img src={organizer.image} alt={organizer.name} />
             <h2>{organizer.name}</h2>
@@ -259,14 +259,14 @@ const Orgs = () => {
                 <FontAwesomeIcon icon={faTwitter} size="2x" />
               </a>
               <a href={organizer.social.linkedin} target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faLinkedin} size="2x" />
+                <FontAwesomeIcon icon={faInstagram} size="2x" />
               </a>
             </div>
           </div>
         ))}
       </div>
       <div className="organizer-row quad">
-        {organizers.slice(10, 14).map((organizer, index) => (
+        {organizers.slice(9, 12).map((organizer, index) => (
           <div className="organizer-card" key={index}>
             <img src={organizer.image} alt={organizer.name} />
             <h2>{organizer.name}</h2>
@@ -279,14 +279,14 @@ const Orgs = () => {
                 <FontAwesomeIcon icon={faTwitter} size="2x" />
               </a>
               <a href={organizer.social.linkedin} target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faLinkedin} size="2x" />
+                <FontAwesomeIcon icon={faInstagram} size="2x" />
               </a>
             </div>
           </div>
         ))}
       </div>
       <div className="organizer-row quad">
-        {organizers.slice(14, 18).map((organizer, index) => (
+        {organizers.slice(12, 15).map((organizer, index) => (
           <div className="organizer-card" key={index}>
             <img src={organizer.image} alt={organizer.name} />
             <h2>{organizer.name}</h2>
@@ -299,7 +299,27 @@ const Orgs = () => {
                 <FontAwesomeIcon icon={faTwitter} size="2x" />
               </a>
               <a href={organizer.social.linkedin} target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faLinkedin} size="2x" />
+                <FontAwesomeIcon icon={faInstagram} size="2x" />
+              </a>
+            </div>
+          </div>
+        ))}
+      </div>
+      <div className="organizer-row quad">
+        {organizers.slice(15, 18).map((organizer, index) => (
+          <div className="organizer-card" key={index}>
+            <img src={organizer.image} alt={organizer.name} />
+            <h2>{organizer.name}</h2>
+            <p>{organizer.designation}</p>
+            <div className="social-links">
+              <a href={organizer.social.facebook} target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faFacebook} size="2x" />
+              </a>
+              <a href={organizer.social.twitter} target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faTwitter} size="2x" />
+              </a>
+              <a href={organizer.social.linkedin} target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faInstagram} size="2x" />
               </a>
             </div>
           </div>

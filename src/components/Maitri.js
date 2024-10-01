@@ -58,8 +58,8 @@ const Maitri = () => {
             <p>An annual marathon promoting health and wellness, bringing together runners from all walks of life.</p>
           </div>
           <div className="event-card">
-            <h3>Wellness Workshops</h3>
-            <p>A series of workshops focusing on mental health, nutrition, and sustainable living.</p>
+            <h3>Diwali Pahat</h3>
+            <p>A morning on occassion of our favourite festival diwali enjoy the medoly of songs.</p>
           </div>
           <div className="event-card">
             <h3>Yoga Sessions</h3>

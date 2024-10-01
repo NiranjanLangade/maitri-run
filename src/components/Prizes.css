@@ -1,80 +1,107 @@
 .prizes-container {
     padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  h1, h2 {
+    color: #1c3d2c; /* Green Theme */
     text-align: center;
-    background-color: #f9fafb;
-  }
-
-  h1 {
-    font-size: 2rem;
-    color: #28a745; /* Maitri Green */
     margin-bottom: 20px;
   }
 
-  h2 {
-    font-size: 1.8rem;
-    color: #333;
-    margin-bottom: 15px;
+  .prize-pool, .categories, .distribution, .benefits, .disclaimer {
+    margin: 20px 0;
   }
 
-  p {
+  .prize-pool p, .distribution p, .disclaimer p {
     font-size: 1.2rem;
+    text-align: center;
     color: #555;
-    margin-bottom: 20px;
   }
 
   table {
     width: 100%;
-    max-width: 700px;
-    margin: 0 auto;
     border-collapse: collapse;
+    margin: 0 auto;
   }
 
-  th, td {
-    padding: 15px;
+  table th, table td {
     border: 1px solid #ddd;
+    padding: 12px;
     text-align: center;
   }
 
-  th {
-    background-color: #28a745;
+  table th {
+    background-color: #4CAF50;
     color: white;
-    font-size: 1.2rem;
   }
 
-  td {
-    font-size: 1.1rem;
-    color: #333;
-  }
-
-  tr:nth-child(even) {
+  table tbody tr:nth-child(even) {
     background-color: #f2f2f2;
   }
 
+  /* Enhanced Benefits Section Styling */
+  .benefits {
+    text-align: center;
+    background-color: #e8f5e9; /* Light green background */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for a card-like effect */
+    margin: 20px 0;
+  }
+
+  .benefits h2 {
+    color: #1c3d2c;
+    margin-bottom: 15px;
+  }
+
+  .benefits ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.2rem;
+    color: #555;
+  }
+
+  .benefits ul li {
+    margin: 10px 0;
+    padding: 8px 15px;
+    display: inline-block;
+    background-color: #ffffff;
+    border-radius: 50px;
+    border: 1px solid #4CAF50;
+    color: #1c3d2c;
+    font-weight: 500;
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Hover effects */
+  }
+
+  .benefits ul li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .benefits ul li::before {
+    content: "✓";
+    color: #4CAF50;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+
   .disclaimer {
+    text-align: center;
+    color: #ff6347; /* Tomato color for the disclaimer */
+    font-weight: bold;
     margin-top: 20px;
-    font-size: 1rem;
-    color: #d9534f; /* Red for disclaimer */
   }
 
-  .disclaimer p {
-    margin: 0;
-  }
-
+  /* Mobile Responsiveness */
   @media (max-width: 768px) {
-    h1 {
-      font-size: 1.6rem;
+    table thead, table tbody, table th, table td {
+      font-size: 0.9rem;
     }
 
-    h2 {
-      font-size: 1.4rem;
-    }
-
-    p {
+    .benefits ul li {
       font-size: 1rem;
-    }
-
-    th, td {
-      padding: 10px;
-      font-size: 1rem;
+      padding: 6px 10px;
     }
   }
