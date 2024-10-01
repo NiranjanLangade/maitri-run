@@ -11,7 +11,7 @@ const VenueDetails = () => {
           <p>The marathon will start from:</p>
           <p><strong>Swayamvar Mangal Karyalay,Vaduj</strong></p>
           <p>Address: Satewadi Corner, Pusegaon Vaduj Rd, Vaduj, Maharashtra 415506</p>
-          <p>Time: 6:00 AM Sharp</p>
+          <p>Time: 6:30 AM Sharp</p>
         </div>
         <div className="venue-section">
           <h2>T-Shirt & Bib Collection</h2>

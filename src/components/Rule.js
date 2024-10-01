@@ -11,7 +11,7 @@ const Rule = () => {
           <li>Each participant must wear their official bib number on the front of their T-shirt.</li>
           <li>Participants must follow the designated route and not take any shortcuts.</li>
           <li>Water stations will be available at every 5km mark, and medical assistance will be provided if required.</li>
-          <li>The marathon will start at 6:00 AM sharp. All runners must arrive at least 30 minutes early for check-in.</li>
+          <li>The marathon will start at 6:30 AM sharp. All runners must arrive at least 30 minutes early for check-in.</li>
           <li>Participants are not allowed to use any kind of vehicle during the race.</li>
           <li>If a participant is found violating any rules, they may be disqualified from the race.</li>
           <li>Prize distribution will take place after the completion of the race at the main venue.</li>

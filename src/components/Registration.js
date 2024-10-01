@@ -15,12 +15,12 @@ const Registration = () => {
         <h2>Marathon Categories</h2>
         <div className="marathon-options">
           <div className="marathon-card">
-            <h3>5 KM Marathon</h3>
-            <p>Registration Fee: ₹500</p>
+            <h3>5 KM Fun Run</h3>
+            <p>Registration Fee: ₹600</p>
           </div>
           <div className="marathon-card">
             <h3>10 KM Marathon</h3>
-            <p>Registration Fee: ₹700</p>
+            <p>Registration Fee: ₹800</p>
           </div>
         </div>
       </div>
@@ -34,14 +34,32 @@ const Registration = () => {
 
       {/* Offline Registration Section */}
       <div className="registration-offline">
-        <h2>Offline Registration</h2>
-        <p>For offline registrations, please contact:</p>
-        <ul>
-          <li><strong>Contact Person:</strong> Rajkiran Langade</li>
-          <li><strong>Phone Number:</strong> +91 9822271855</li>
-          <li><strong>Email Address:</strong> mitrirunvaduj@gmail.com</li>
-        </ul>
-      </div>
+  <h2>Offline Registration</h2>
+  <p>For offline registrations, please contact:</p>
+  <ul className="contact-list">
+    <li>
+      <strong>Contact Person:</strong> Mr. Narendra Godase <br />
+      <strong>Phone Number:</strong> +91 9822347137
+    </li>
+    <li>
+      <strong>Contact Person:</strong> Mr. Jaywant Godase <br />
+      <strong>Phone Number:</strong> +91 9604751001
+    </li>
+    <li>
+      <strong>Contact Person:</strong> Mr. Rajkiran Langade <br />
+      <strong>Phone Number:</strong> +91 9822271855
+    </li>
+    <li>
+      <strong>Contact Person:</strong> Dr. Mahesh Katkar <br />
+      <strong>Phone Number:</strong> +91 9970616882
+    </li>
+    <li>
+      <strong>Contact Person:</strong> Mr. Abhaykumar Deshmukh <br />
+      <strong>Phone Number:</strong> +91 9850446744
+    </li>
+  </ul>
+</div>
+
     </div>
   );
 };

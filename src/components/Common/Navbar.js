@@ -24,7 +24,7 @@ const Navbar = () => {
               <Link to="/about-maitri-run">About Maitri-Run</Link>
               <Link to="/organizers">Organizers</Link>
               <Link to="/maitri-foundation">Maitri Foundation</Link>
-              <Link to="/sponsors">Sponsors</Link>
+              {/* <Link to="/sponsors">Sponsors</Link> */}
             </div>
           </div>
         </li>

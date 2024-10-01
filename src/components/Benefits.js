@@ -4,10 +4,10 @@ import './Benefits.css';
 const Benefits = () => {
   const benefits = [
     { title: 'E-Certificate of Participation', imgSrc: '/images/certificate.jpg' },
-    { title: 'Zumba Warm-up Session', imgSrc: '/images/zumba.jpg' },
-    { title: 'Route Support with Water Points', imgSrc: '/images/water-points.jpg' },
-    { title: 'Medal for Completing the Marathon', imgSrc: '/images/medal.jpg' },
-    { title: 'Lunch after the Race', imgSrc: '/images/lunch.jpg' }
+    { title: 'Zumba Warm-up Session', imgSrc: '/images/zumba.png' },
+    { title: 'Route Support with Water Points', imgSrc: '/images/water-points.png' },
+    { title: 'Medal for Completing the Marathon', imgSrc: '/images/medals.png' },
+    { title: 'Lunch after the Race', imgSrc: '/images/lunch.png' }
   ];
 
   return (

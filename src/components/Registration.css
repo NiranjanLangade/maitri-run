@@ -94,17 +94,29 @@
   }
 
   /* Offline Registration */
-  .registration-offline ul {
+ .registration-offline ul {
     list-style-type: none;
     padding: 0;
     text-align: center;
-  }
+}
 
-  .registration-offline ul li {
+.registration-offline ul li {
     font-size: 1.2rem;
     color: #555;
     margin: 10px 0;
-  }
+    line-height: 1.6;
+}
+
+.registration-offline ul li strong {
+    color: #008000; /* Same green theme for consistency */
+}
+
+@media (max-width: 768px) {
+    .registration-offline ul li {
+        font-size: 1rem;
+    }
+}
+
 
   /* Mobile Responsiveness */
   @media (max-width: 768px) {

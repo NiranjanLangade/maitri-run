@@ -15,16 +15,6 @@ const organizers = [
     image: '/organizers/johndoe.jpg', // Replace with actual image path
   },
   {
-    name: 'Mr. Jaywant Godase',
-    designation: 'Vice Chairman',
-    social: {
-      facebook: 'https://facebook.com/janesmith',
-      twitter: 'https://twitter.com/janesmith',
-      linkedin: 'https://linkedin.com/in/janesmith',
-    },
-    image: '/organizers/janesmith.jpg',
-  },
-  {
     name: 'Mr. Rajkiran Langade',
     designation: 'Secretary',
     social: {
@@ -34,6 +24,17 @@ const organizers = [
     },
     image: '/organizers/robertlee.jpg',
   },
+  {
+    name: 'Mr. Jaywant Godase',
+    designation: 'Vice Chairman',
+    social: {
+      facebook: 'https://facebook.com/janesmith',
+      twitter: 'https://twitter.com/janesmith',
+      linkedin: 'https://linkedin.com/in/janesmith',
+    },
+    image: '/organizers/janesmith.jpg',
+  },
+
   {
     name: 'Dr. Mahesh Katkar',
     designation: 'Treasurer',
@@ -135,6 +136,16 @@ const organizers = [
     image: '/organizers/sophiabrown.jpg',
   },
   {
+    name: 'Mr. Amol Godase',
+    designation: 'Member',
+    social: {
+      facebook: 'https://facebook.com/sophiabrown',
+      twitter: 'https://twitter.com/sophiabrown',
+      linkedin: 'https://linkedin.com/in/sophiabrown',
+    },
+    image: '/organizers/sophiabrown.jpg',
+  },
+  {
     name: 'Mr. Shrinivas Kadam',
     designation: 'Member',
     social: {
@@ -155,7 +166,18 @@ const organizers = [
     image: '/organizers/sophiabrown.jpg',
   },
   {
-    name: 'Mr. Amol Godase',
+    name: 'Mr. Sachin Godase',
+    designation: 'Member',
+    social: {
+      facebook: 'https://facebook.com/sophiabrown',
+      twitter: 'https://twitter.com/sophiabrown',
+      linkedin: 'https://linkedin.com/in/sophiabrown',
+    },
+    image: '/organizers/sophiabrown.jpg',
+  },
+
+  {
+    name: 'Mr. Santosh Kulkarni',
     designation: 'Member',
     social: {
       facebook: 'https://facebook.com/sophiabrown',
@@ -165,7 +187,7 @@ const organizers = [
     image: '/organizers/sophiabrown.jpg',
   },
   {
-    name: 'Mr. Santosh Kulkarni',
+    name: 'Mr. Santosh Shaha',
     designation: 'Member',
     social: {
       facebook: 'https://facebook.com/sophiabrown',
@@ -182,7 +204,7 @@ const Orgs = () => {
       <h1>Meet Our Organizers</h1>
 
       {/* First row: 1 organizer */}
-      <div className="organizer-row single">
+      {/* <div className="organizer-row single">
         <div className="organizer-card">
           <img src={organizers[0].image} alt={organizers[0].name} />
           <h2>{organizers[0].name}</h2>
@@ -199,11 +221,11 @@ const Orgs = () => {
             </a>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Second row: 2 organizers */}
       <div className="organizer-row double">
-        {organizers.slice(1, 3).map((organizer, index) => (
+        {organizers.slice(0, 2).map((organizer, index) => (
           <div className="organizer-card" key={index}>
             <img src={organizer.image} alt={organizer.name} />
             <h2>{organizer.name}</h2>
@@ -225,7 +247,7 @@ const Orgs = () => {
 
       {/* Third row: 4 organizers */}
       <div className="organizer-row quad">
-        {organizers.slice(3, 6).map((organizer, index) => (
+        {organizers.slice(2, 4).map((organizer, index) => (
           <div className="organizer-card" key={index}>
             <img src={organizer.image} alt={organizer.name} />
             <h2>{organizer.name}</h2>
@@ -246,7 +268,7 @@ const Orgs = () => {
       </div>
 
       <div className="organizer-row quad">
-        {organizers.slice(6, 9).map((organizer, index) => (
+        {organizers.slice(4, 7).map((organizer, index) => (
           <div className="organizer-card" key={index}>
             <img src={organizer.image} alt={organizer.name} />
             <h2>{organizer.name}</h2>
@@ -266,7 +288,7 @@ const Orgs = () => {
         ))}
       </div>
       <div className="organizer-row quad">
-        {organizers.slice(9, 12).map((organizer, index) => (
+        {organizers.slice(7, 10).map((organizer, index) => (
           <div className="organizer-card" key={index}>
             <img src={organizer.image} alt={organizer.name} />
             <h2>{organizer.name}</h2>
@@ -286,7 +308,7 @@ const Orgs = () => {
         ))}
       </div>
       <div className="organizer-row quad">
-        {organizers.slice(12, 15).map((organizer, index) => (
+        {organizers.slice(10, 13).map((organizer, index) => (
           <div className="organizer-card" key={index}>
             <img src={organizer.image} alt={organizer.name} />
             <h2>{organizer.name}</h2>
@@ -306,7 +328,27 @@ const Orgs = () => {
         ))}
       </div>
       <div className="organizer-row quad">
-        {organizers.slice(15, 18).map((organizer, index) => (
+        {organizers.slice(13, 16).map((organizer, index) => (
+          <div className="organizer-card" key={index}>
+            <img src={organizer.image} alt={organizer.name} />
+            <h2>{organizer.name}</h2>
+            <p>{organizer.designation}</p>
+            <div className="social-links">
+              <a href={organizer.social.facebook} target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faFacebook} size="2x" />
+              </a>
+              <a href={organizer.social.twitter} target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faTwitter} size="2x" />
+              </a>
+              <a href={organizer.social.linkedin} target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faInstagram} size="2x" />
+              </a>
+            </div>
+          </div>
+        ))}
+      </div>
+      <div className="organizer-row quad">
+        {organizers.slice(16, 19).map((organizer, index) => (
           <div className="organizer-card" key={index}>
             <img src={organizer.image} alt={organizer.name} />
             <h2>{organizer.name}</h2>

@@ -32,13 +32,13 @@ const AboutMaitri = () => {
       <div className="stats-section">
         <div className="stat-item">
           <h2>
-            <CountUp end={5000} duration={2.5} />+
+            <CountUp end={1200} duration={2.5} />+
           </h2>
           <p>Total Runners</p>
         </div>
         <div className="stat-item">
           <h2>
-            <CountUp end={2200} duration={2.5} />+
+            <CountUp end={500} duration={2.5} />+
           </h2>
           <p>Female Runners</p>
         </div>

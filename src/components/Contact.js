@@ -30,16 +30,16 @@ const Contact = () => {
 
         <div className="contact-details">
           <h2>Our Contact Details</h2>
-          <p><strong>Phone : </strong> +91 9561350845</p>
+          <p><strong>Phone : </strong> 9822347137 | 9604751001 | 9822271855 | 9970616882 | 9850446744</p>
           <p><strong>Email : </strong> maitrirunvaduj@gmail.com</p>
-          <p><strong>Address : </strong>Rajis Medical, Near Accident Hospital, Vaduj</p>
+          <p><strong>Address : </strong>Ashirvad Hospital, HFX3+5JP, dahivdi road, near STdepo, Talathi Colony, Vaduj - 415506</p>
           <div className="map-container">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3803.0743536474365!2d74.4459972752152!3d17.599203783324498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc3dad9c737129d%3A0x9ca2d8c6b4a09f38!2sAccident%20Hospital%2C%20Vaduj!5e0!3m2!1sen!2sin!4v1727763268180!5m2!1sen!2sin" width="100%"
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3803.100504853657!2d74.45150137521516!3d17.59796168332561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc3db27b0000001%3A0x4f1cefb95eff2363!2sAshirvad%20Bal%20rugnalay!5e0!3m2!1sen!2sin!4v1727771921646!5m2!1sen!2sin" width="100%"
               height="250"
               style={{ border: 0 }}
               allowFullScreen=""
               loading="lazy"
-              title="Accident Hospital"></iframe>
+              title="Ashirvad Hospital"></iframe>
           </div>
         </div>
       </div>

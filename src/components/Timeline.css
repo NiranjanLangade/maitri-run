@@ -57,7 +57,7 @@ h1{
   right:-6px;
   background:#008000;
   border-radius:50%;
-  box-shadow:0 0 0 3px rgba(233,33,99,0.2);
+  box-shadow:0 0 0 3px #abf7b1;
 }
 .timeline ul li:nth-child(even):before
 {
@@ -69,7 +69,7 @@ h1{
   left:-4px;
   background:#008000;
   border-radius:50%;
-  box-shadow:0 0 0 3px #008000;
+  box-shadow:0 0 0 3px #abf7b1;
 }
 .timeline ul li h3{
   padding:0;
@@ -96,7 +96,7 @@ h1{
   background:#008000;
   color:#fff;
   border-radius:18px;
-  box-shadow:0 0 0 3px rgba(233,33,99,0.3);
+  box-shadow:0 0 0 3px #abf7b1;
 }
 .timeline ul li:nth-child(even) .time
 {
@@ -108,7 +108,7 @@ h1{
   background:#008000;
   color:#fff;
   border-radius:18px;
-  box-shadow:0 0 0 3px rgba(233,33,99,0.3);
+  box-shadow:0 0 0 3px #abf7b1;
 }
 @media(max-width:1000px)
 {

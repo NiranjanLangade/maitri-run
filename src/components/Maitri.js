@@ -41,7 +41,7 @@ const Maitri = () => {
       <section className="formation-section">
         <h2>How Maitri Foundation was Formed</h2>
         <p>
-          Maitri Foundation was established in 2010 by a group of passionate individuals who believed in the power of
+          Maitri Foundation was established in 2006 by a group of passionate individuals who believed in the power of
           holistic wellness. Starting with a few local events focused on health and fitness, the foundation has now grown
           into a reputable organization hosting large-scale events such as the Maitri Run. With a vision to create a
           healthier community, the foundation has made significant strides in promoting wellness, sustainable living, and
@@ -62,8 +62,8 @@ const Maitri = () => {
             <p>A morning on occassion of our favourite festival diwali enjoy the medoly of songs.</p>
           </div>
           <div className="event-card">
-            <h3>Yoga Sessions</h3>
-            <p>Weekly yoga sessions to encourage mindfulness and physical fitness within the community.</p>
+            <h3>Badminton Tournaments</h3>
+            <p>Yearly we organize Badminton Tournaments for all Badminton enthusists in District.</p>
           </div>
           <div className="event-card">
             <h3>Community Clean-ups</h3>
