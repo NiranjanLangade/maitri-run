@@ -38,11 +38,11 @@ const Registration = () => {
   <p>For offline registrations, please contact:</p>
   <ul className="contact-list">
     <li>
-      <strong>Contact Person:</strong> Mr. Narendra Godase <br />
+      <strong>Contact Person:</strong> Mr. Pravin Chavan <br />
       <strong>Phone Number:</strong> +91 9822347137
     </li>
     <li>
-      <strong>Contact Person:</strong> Mr. Jaywant Godase <br />
+      <strong>Contact Person:</strong> Dr. Mahesh Katkar <br />
       <strong>Phone Number:</strong> +91 9604751001
     </li>
     <li>
@@ -50,7 +50,7 @@ const Registration = () => {
       <strong>Phone Number:</strong> +91 9822271855
     </li>
     <li>
-      <strong>Contact Person:</strong> Dr. Mahesh Katkar <br />
+      <strong>Contact Person:</strong> Mr. Narendra Godase <br />
       <strong>Phone Number:</strong> +91 9970616882
     </li>
     <li>
