@@ -96,6 +96,14 @@
 
   /* Mobile Responsiveness */
   @media (max-width: 768px) {
+    .desktop-view {
+      display: none;
+    }
+
+    .mobile-view {
+      display: table-cell;
+    }
+
     table thead, table tbody, table th, table td {
       font-size: 0.9rem;
     }
@@ -104,4 +112,9 @@
       font-size: 1rem;
       padding: 6px 10px;
     }
+  }
+
+  /* Default (Desktop) */
+  .mobile-view {
+    display: none;
   }

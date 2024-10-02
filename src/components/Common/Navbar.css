@@ -1,21 +1,23 @@
-/* Navbar.css */
+/* Navbar Styling */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* padding: 20px; */
     background-color: #fff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
     position: relative;
-  }
+    z-index: 10;
+}
 
-  .logo img {
-    padding-left:30px ;
-    padding-top: 20px;
-    height: 100px;
-  }
+/* Logo */
+.logo img {
+    padding-left: 30px;
+    height: 80px;
+}
 
-  .nav-links {
+/* Base Styles */
+.nav-links {
     display: flex;
     gap: 20px;
   }
@@ -30,7 +32,6 @@
     color: #333;
     font-size: 18px;
     font-weight: 500;
-    /* padding-left: 25px; */
     padding-bottom: 5px;
   }
 
@@ -74,7 +75,65 @@
     background-color: #f1f1f1;
   }
 
-  /* Hamburger Menu */
+  /* Styles for the dropdown arrow */
+.dropdown-arrow {
+    margin-left: 8px;
+    font-size: 12px;
+    vertical-align: middle;
+    transition: transform 0.3s ease;
+  }
+
+  .dropdown-toggle {
+    background: none;
+    border: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .dropdown-toggle:hover {
+    color: #28a745;
+  }
+
+  /* Dropdown content */
+  .dropdown-content {
+    display: none;
+    position: relative;
+    background-color: #fff;
+  }
+
+  .dropdown-content a {
+    padding: 10px 20px;
+    display: block;
+    text-decoration: none;
+    color: #333;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  /* Mobile styles for active dropdown */
+  .nav-links.active .dropdown-content {
+    display: block;
+    width: 100%;
+  }
+
+  /* Remove default list styles */
+  li {
+    list-style: none;
+  }
+
+
+  /* Hamburger Menu for Mobile */
   .hamburger {
     display: none;
     flex-direction: column;
@@ -92,7 +151,7 @@
     transition: all 0.3s ease;
   }
 
-  /* Active Menu */
+  /* Active Menu for Mobile */
   .nav-links.active {
     display: flex;
     flex-direction: column;
@@ -108,9 +167,49 @@
     margin: 10px 0;
   }
 
+  /* Register Button */
+  .register-btn {
+    background: linear-gradient(135deg, #28a745, #8bc34a);
+    display: inline-block !important;
+    color: white !important;
+    padding: 12px 30px;
+    font-size: 16px !important;
+    font-weight: bold !important;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    margin-left: 20px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    animation: pop-out 1.5s infinite ease-in-out;
+  }
+
+  .register-btn:hover {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, #8bc34a, #28a745);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  @keyframes pop-out {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+  }
+
+  /* Media Query for Mobile View */
   @media (max-width: 768px) {
     .nav-links {
-      display: grid;
+      display: none;
+    }
+
+    .nav-links.active {
+      display: flex;
     }
 
     .hamburger {
@@ -118,52 +217,14 @@
     }
   }
 
-  /* Mobile Dropdown */
-  .dropdown-content {
-    position: relative;
-    box-shadow: none;
+  /* Dropdown Arrow for Dropdown Links */
+  .dropdown-arrow {
+    margin-left: 8px;
+    font-size: 12px;
+    vertical-align: middle;
+    transition: transform 0.3s ease;
   }
 
-  .dropdown-content a {
-    padding: 8px 0;
+  .dropdown:hover .dropdown-arrow {
+    transform: rotate(180deg);
   }
-
-
- /* Register Now! Button */
-.register-btn {
-    background: linear-gradient(135deg, #28a745, #8bc34a); /* Green gradient */
-    display: inline-block !important;
-    color: white !important;
-    padding: 12px 30px;
-    font-size: 16px !important;
-    font-weight: bold !important;
-    border: none;
-    border-radius: 50px; /* More rounded shape */
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15); /* Soft shadow */
-    margin-left: 20px; /* Spacing to the right */
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-    animation: pop-out 1.5s infinite ease-in-out; /* Pop-out animation */
-  }
-
-  /* Hover Effect */
-  .register-btn:hover {
-    transform: scale(1.1); /* Slight growth on hover */
-    background: linear-gradient(135deg, #8bc34a, #28a745); /* Gradient flip */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow */
-  }
-
-  /* Pop-out Keyframes */
-  @keyframes pop-out {
-    0%, 100% {
-      transform: scale(1); /* Normal size */
-    }
-    50% {
-      transform: scale(1.05); /* Slight growth */
-    }
-  }
-
-  /* Responsive Spacing */

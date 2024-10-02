@@ -32,7 +32,7 @@ const Footer = () => {
             <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><FaYoutube /></a>
           </div>
           <p>&copy; 2024 Maitri Run. All Rights Reserved.</p>
-          <p>Developed with ❤️ By Niranjan</p>
+          <p>Developed with ❤️ By 𝒩𝒾𝓇𝒶𝓃𝒿𝒶𝓃</p>
         </div>
       </div>
     </footer>

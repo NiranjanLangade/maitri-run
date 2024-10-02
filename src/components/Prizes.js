@@ -17,14 +17,8 @@ const Prizes = () => {
           <thead>
             <tr>
               <th>Age Group</th>
-              <th colSpan="3">Men's Prize</th>
-              <th colSpan="3">Women's Prize</th>
-            </tr>
-            <tr>
-              <th></th>
-              <th>Winner</th>
-              <th>1st Runner-up</th>
-              <th>2nd Runner-up</th>
+              <th className="desktop-view">Men's and Women's Prize</th>
+              <th className="mobile-view">Men's and Women's Prize</th>
               <th>Winner</th>
               <th>1st Runner-up</th>
               <th>2nd Runner-up</th>
@@ -33,27 +27,24 @@ const Prizes = () => {
           <tbody>
             <tr>
               <td>18-35</td>
-              <td>₹7,777</td>
-              <td>₹5,555</td>
-              <td>₹3,333</td>
+              <td className="desktop-view">Men & Women</td>
+              <td className="mobile-view">Both</td>
               <td>₹7,777</td>
               <td>₹5,555</td>
               <td>₹3,333</td>
             </tr>
             <tr>
               <td>35-50</td>
-              <td>₹7,777</td>
-              <td>₹5,555</td>
-              <td>₹3,333</td>
+              <td className="desktop-view">Men & Women</td>
+              <td className="mobile-view">Both</td>
               <td>₹7,777</td>
               <td>₹5,555</td>
               <td>₹3,333</td>
             </tr>
             <tr>
               <td>51+</td>
-              <td>₹7,777</td>
-              <td>₹5,555</td>
-              <td>₹3,333</td>
+              <td className="desktop-view">Men & Women</td>
+              <td className="mobile-view">Both</td>
               <td>₹7,777</td>
               <td>₹5,555</td>
               <td>₹3,333</td>
@@ -61,11 +52,6 @@ const Prizes = () => {
           </tbody>
         </table>
       </div>
-
-      {/* <div className="distribution">
-        <h2>Prize Distribution</h2>
-        <p>The prize pool will be distributed based on the performance of runners within their respective categories. The first-place finisher in each category will receive 50% of the prize for that group, second place will receive 30%, and third place will receive 20%.</p>
-      </div> */}
 
       <div className="benefits">
         <h2>Benefits for All Participants</h2>
