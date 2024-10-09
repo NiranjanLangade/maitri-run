@@ -11,7 +11,7 @@ const FAQsComp = () => {
   const faqs = [
     {
       question: "When is the Maitri Run happening?",
-      answer: "The Maitri Run is scheduled for 16th December 2024. Registrations open on 1st October 2024."
+      answer: "The Maitri Run is scheduled for 1st December 2024. Registrations open on 15th October 2024."
     },
     {
       question: "Where can I register for the event?",
